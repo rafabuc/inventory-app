@@ -155,6 +155,5 @@ aws iam attach-role-policy --role-name ECSTaskSQSRole --policy-arn $POLICY_ARN
 
 ## Evidencia Pruebas
  - En la carpeta test-evidencia se incluyen logs y evidencia de las prueba ejecutadas en el sistema
- - Link de collection postman:   https://lively-sunset-37883.postman.co/workspace/API-Inventory~86baf2ee-ab2b-4f85-815c-77b198532eff/collection/4011924-5d0500a4-3b77-4a28-a6c3-589fa13b69c8?action=share&source=copy-link&creator=4011924
-
+ - Se incluye ademas un exportacion de Collections Postman de las pruebas realizadas
 - 
