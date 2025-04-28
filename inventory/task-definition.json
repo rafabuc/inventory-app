@@ -1,0 +1,45 @@
+{
+    "family": "inventory-task",
+    "networkMode": "awsvpc",
+   "taskRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ECSTaskSQSRole",
+    "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+      {
+        "name": "inventory-app-container",
+        "image": "ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/inventory-app:v1",
+        "essential": true,
+
+        "environment": [
+          {
+            "name": "AWS_REGION",
+            "value": "us-east-1"
+          },
+          {
+            "name": "AWS_SQS_PRODUCT_QUEUE",
+            "value": "inventory-queue"
+          }
+        ],
+
+        "portMappings": [
+          {
+            "containerPort": 8080,
+            "hostPort": 8080,
+            "protocol": "tcp"
+          }
+        ],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "/ecs/inventory-task",
+            "awslogs-region": "us-east-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        }
+      }
+    ],
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+  }
