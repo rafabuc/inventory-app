@@ -146,10 +146,15 @@ aws ecs describe-tasks --cluster tu-cluster --tasks [task-arn] --query "tasks[0]
 
 aws iam create-policy --policy-name ECSTaskSQSPolicy --policy-document file://sqs-policy.json
 
-# Guarda el ARN de la política que se muestra en la salida
+1.  Guarda el ARN de la política que se muestra en la salida
 POLICY_ARN=$(aws iam create-policy --policy-name ECSTaskSQSPolicy --policy-document file://sqs-policy.json --query 'Policy.Arn' --output text)
 
-# Adjunta la política al rol
+2.  Adjunta la política al rol
 aws iam attach-role-policy --role-name ECSTaskSQSRole --policy-arn $POLICY_ARN
 
 
+## Evidencia Pruebas
+ - En la carpeta test-evidencia se incluyen logs y evidencia de las prueba ejecutadas en el sistema
+ - Link de collection postman:   https://lively-sunset-37883.postman.co/workspace/API-Inventory~86baf2ee-ab2b-4f85-815c-77b198532eff/collection/4011924-5d0500a4-3b77-4a28-a6c3-589fa13b69c8?action=share&source=copy-link&creator=4011924
+
+- 

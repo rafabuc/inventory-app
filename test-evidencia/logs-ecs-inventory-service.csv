@@ -1,0 +1,93 @@
+timestamp,message
+1745526744918,  .   ____          _            __ _ _
+1745526744918, /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+1745526744918,( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+1745526744918, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+1745526744918,"  '  |____| .__|_| |_|_| |_\__, | / / / /"
+1745526744918, =========|_|==============|___/=/_/_/_/
+1745526744920, :: Spring Boot ::                (v3.4.4)
+1745526746729,2025-04-24T20:32:26.727Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.InventoryApplication   : Starting InventoryApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
+1745526746730,"2025-04-24T20:32:26.730Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.InventoryApplication   : No active profile set, falling back to 1 default profile: ""default"""
+1745526758927,2025-04-24T20:32:38.927Z  INFO 1 --- [inventory] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1745526759819,2025-04-24T20:32:39.818Z  INFO 1 --- [inventory] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 787 ms. Found 1 JPA repository interface.
+1745526766820,2025-04-24T20:32:46.820Z  INFO 1 --- [inventory] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+1745526767021,2025-04-24T20:32:47.021Z  INFO 1 --- [inventory] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+1745526767022,2025-04-24T20:32:47.022Z  INFO 1 --- [inventory] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+1745526767424,2025-04-24T20:32:47.424Z  INFO 1 --- [inventory] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+1745526767426,2025-04-24T20:32:47.425Z  INFO 1 --- [inventory] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 19305 ms
+1745526769225,2025-04-24T20:32:49.224Z  INFO 1 --- [inventory] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+1745526769822,2025-04-24T20:32:49.822Z  INFO 1 --- [inventory] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+1745526770323,2025-04-24T20:32:50.323Z  INFO 1 --- [inventory] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+1745526773423,2025-04-24T20:32:53.422Z  INFO 1 --- [inventory] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+1745526773727,2025-04-24T20:32:53.727Z  INFO 1 --- [inventory] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+1745526775825,2025-04-24T20:32:55.825Z  INFO 1 --- [inventory] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+1745526775827,2025-04-24T20:32:55.827Z  INFO 1 --- [inventory] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+1745526776119,2025-04-24T20:32:56.118Z  WARN 1 --- [inventory] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+1745526776516,2025-04-24T20:32:56.426Z  INFO 1 --- [inventory] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+1745526776516,	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+1745526776516,	Database driver: undefined/unknown
+1745526776516,	Database version: 2.3.232
+1745526776516,	Autocommit mode: undefined/unknown
+1745526776516,	Isolation level: undefined/unknown
+1745526776516,	Minimum pool size: undefined/unknown
+1745526776516,	Maximum pool size: undefined/unknown
+1745526783922,"Hibernate: create global temporary table HTE_inventory(rn_ integer not null, stock integer, id bigint, product_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL"
+1745526785021,2025-04-24T20:33:05.020Z  INFO 1 --- [inventory] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+1745526785227,"Hibernate: create table inventory (id bigint not null, name varchar(255), product_id bigint, stock integer, primary key (id))"
+1745526785323,Hibernate: create sequence inventory_seq start with 1 increment by 50
+1745526785327,2025-04-24T20:33:05.326Z  INFO 1 --- [inventory] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+1745526789623,"2025-04-24T20:33:09.622Z  WARN 1 --- [inventory] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+1745526793220,2025-04-24T20:33:13.220Z  INFO 1 --- [inventory] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+1745526794320,2025-04-24T20:33:14.320Z  INFO 1 --- [inventory] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+1745526794526,2025-04-24T20:33:14.525Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.InventoryApplication   : Started InventoryApplication in 54.802 seconds (process running for 60.678)
+1745526798432,Hibernate: select count(*) from inventory i1_0
+1745526798728,Hibernate: select next value for inventory_seq
+1745526799022,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799117,"2025-04-24T20:33:19.116Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=1, name='name_inventory0', productId=0, stock=8}"
+1745526799117,Hibernate: select next value for inventory_seq
+1745526799118,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799120,"2025-04-24T20:33:19.119Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=2, name='name_inventory1', productId=1, stock=4}"
+1745526799121,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799122,"2025-04-24T20:33:19.122Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=3, name='name_inventory2', productId=2, stock=10}"
+1745526799123,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799124,"2025-04-24T20:33:19.124Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=4, name='name_inventory3', productId=3, stock=7}"
+1745526799125,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799126,"2025-04-24T20:33:19.126Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=5, name='name_inventory4', productId=4, stock=10}"
+1745526799127,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799127,"2025-04-24T20:33:19.127Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=6, name='name_inventory5', productId=5, stock=6}"
+1745526799128,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799129,"2025-04-24T20:33:19.128Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=7, name='name_inventory6', productId=6, stock=3}"
+1745526799129,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799130,"2025-04-24T20:33:19.129Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=8, name='name_inventory7', productId=7, stock=9}"
+1745526799130,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799131,"2025-04-24T20:33:19.130Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=9, name='name_inventory8', productId=8, stock=2}"
+1745526799131,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799132,"2025-04-24T20:33:19.131Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=10, name='name_inventory9', productId=9, stock=7}"
+1745526799217,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799217,"2025-04-24T20:33:19.217Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=11, name='name_inventory10', productId=10, stock=2}"
+1745526799218,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799219,"2025-04-24T20:33:19.219Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=12, name='name_inventory11', productId=11, stock=6}"
+1745526799220,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799220,"2025-04-24T20:33:19.220Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=13, name='name_inventory12', productId=12, stock=3}"
+1745526799221,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799221,"2025-04-24T20:33:19.221Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=14, name='name_inventory13', productId=13, stock=10}"
+1745526799222,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799223,"2025-04-24T20:33:19.223Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=15, name='name_inventory14', productId=14, stock=8}"
+1745526799224,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799224,"2025-04-24T20:33:19.224Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=16, name='name_inventory15', productId=15, stock=9}"
+1745526799225,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799225,"2025-04-24T20:33:19.225Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=17, name='name_inventory16', productId=16, stock=5}"
+1745526799226,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799226,"2025-04-24T20:33:19.226Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=18, name='name_inventory17', productId=17, stock=7}"
+1745526799227,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799227,"2025-04-24T20:33:19.227Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=19, name='name_inventory18', productId=18, stock=4}"
+1745526799228,"Hibernate: insert into inventory (name,product_id,stock,id) values (?,?,?,?)"
+1745526799228,"2025-04-24T20:33:19.228Z  INFO 1 --- [inventory] [           main] com.rbm.inventory.init.LoadDatabase      : Carga inicial: Inventory{id=20, name='name_inventory19', productId=19, stock=9}"
+1745527026824,2025-04-24T20:37:06.824Z  INFO 1 --- [inventory] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+1745527026825,2025-04-24T20:37:06.824Z  INFO 1 --- [inventory] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+1745527026828,2025-04-24T20:37:06.828Z  INFO 1 --- [inventory] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+1745527027425,"Hibernate: select i1_0.id,i1_0.name,i1_0.product_id,i1_0.stock from inventory i1_0"
+1745527037221,"Hibernate: select i1_0.id,i1_0.name,i1_0.product_id,i1_0.stock from inventory i1_0 where i1_0.product_id=?"
+1745527037317,Hibernate: delete from inventory where id=?
+1745527067873,"Hibernate: select i1_0.id,i1_0.name,i1_0.product_id,i1_0.stock from inventory i1_0"
+1745527082527,"Hibernate: select i1_0.id,i1_0.name,i1_0.product_id,i1_0.stock from inventory i1_0 where i1_0.product_id=?"

@@ -1,0 +1,95 @@
+timestamp,message
+1745530340208,  .   ____          _            __ _ _
+1745530340208, /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+1745530340208,( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+1745530340208, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+1745530340208,"  '  |____| .__|_| |_|_| |_\__, | / / / /"
+1745530340208, =========|_|==============|___/=/_/_/_/
+1745530340210, :: Spring Boot ::                (v3.4.4)
+1745530342011,2025-04-24T21:32:21.914Z  INFO 1 --- [product] [           main] com.rbm.product.ProductApplication       : Starting ProductApplication v0.0.1-SNAPSHOT using Java 17.0.15 with PID 1 (/app/app.jar started by root in /app)
+1745530342015,"2025-04-24T21:32:22.014Z  INFO 1 --- [product] [           main] com.rbm.product.ProductApplication       : No active profile set, falling back to 1 default profile: ""default"""
+1745530352008,2025-04-24T21:32:32.008Z  INFO 1 --- [product] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1745530352510,2025-04-24T21:32:32.510Z  INFO 1 --- [product] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 403 ms. Found 1 JPA repository interface.
+1745530362016,2025-04-24T21:32:42.015Z  INFO 1 --- [product] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+1745530362220,2025-04-24T21:32:42.220Z  INFO 1 --- [product] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+1745530362307,2025-04-24T21:32:42.306Z  INFO 1 --- [product] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+1745530362611,2025-04-24T21:32:42.610Z  INFO 1 --- [product] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+1745530362613,2025-04-24T21:32:42.612Z  INFO 1 --- [product] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 18897 ms
+1745530364421,2025-04-24T21:32:44.420Z  INFO 1 --- [product] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+1745530365108,2025-04-24T21:32:45.107Z  INFO 1 --- [product] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+1745530365413,2025-04-24T21:32:45.412Z  INFO 1 --- [product] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+1745530368718,2025-04-24T21:32:48.717Z  INFO 1 --- [product] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+1745530369107,2025-04-24T21:32:49.107Z  INFO 1 --- [product] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+1745530371313,2025-04-24T21:32:51.313Z  INFO 1 --- [product] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+1745530371315,2025-04-24T21:32:51.315Z  INFO 1 --- [product] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+1745530371615,2025-04-24T21:32:51.615Z  WARN 1 --- [product] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+1745530372011,2025-04-24T21:32:52.010Z  INFO 1 --- [product] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+1745530372011,	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+1745530372011,	Database driver: undefined/unknown
+1745530372011,	Database version: 2.3.232
+1745530372011,	Autocommit mode: undefined/unknown
+1745530372011,	Isolation level: undefined/unknown
+1745530372011,	Minimum pool size: undefined/unknown
+1745530372011,	Maximum pool size: undefined/unknown
+1745530379120,"Hibernate: create global temporary table HTE_product(rn_ integer not null, id bigint, code varchar(255), description varchar(255), name varchar(255), weight varchar(255), primary key (rn_)) TRANSACTIONAL"
+1745530380511,2025-04-24T21:33:00.511Z  INFO 1 --- [product] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+1745530380812,"Hibernate: create table product (id bigint not null, code varchar(255), description varchar(255), name varchar(255), weight varchar(255), primary key (id))"
+1745530380913,Hibernate: create sequence product_seq start with 1 increment by 50
+1745530380918,2025-04-24T21:33:00.918Z  INFO 1 --- [product] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+1745530384520,"2025-04-24T21:33:04.520Z  WARN 1 --- [product] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+1745530388314,2025-04-24T21:33:08.314Z  INFO 1 --- [product] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+1745530389308,2025-04-24T21:33:09.308Z  INFO 1 --- [product] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+1745530389614,2025-04-24T21:33:09.612Z  INFO 1 --- [product] [           main] com.rbm.product.ProductApplication       : Started ProductApplication in 54.4 seconds (process running for 60.772)
+1745530393808,Hibernate: select count(*) from product p1_0
+1745530394109,Hibernate: select next value for product_seq
+1745530394408,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394414,"2025-04-24T21:33:14.413Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=1, description='description_0', name='name_0', code='code_0', weight='0'}"
+1745530394414,Hibernate: select next value for product_seq
+1745530394415,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394416,"2025-04-24T21:33:14.416Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=2, description='description_1', name='name_1', code='code_1', weight='1'}"
+1745530394417,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394418,"2025-04-24T21:33:14.417Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=3, description='description_2', name='name_2', code='code_2', weight='2'}"
+1745530394418,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394419,"2025-04-24T21:33:14.419Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=4, description='description_3', name='name_3', code='code_3', weight='3'}"
+1745530394507,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394508,"2025-04-24T21:33:14.507Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=5, description='description_4', name='name_4', code='code_4', weight='4'}"
+1745530394508,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394509,"2025-04-24T21:33:14.509Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=6, description='description_5', name='name_5', code='code_5', weight='5'}"
+1745530394510,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394511,"2025-04-24T21:33:14.511Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=7, description='description_6', name='name_6', code='code_6', weight='6'}"
+1745530394512,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394512,"2025-04-24T21:33:14.512Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=8, description='description_7', name='name_7', code='code_7', weight='7'}"
+1745530394513,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394514,"2025-04-24T21:33:14.514Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=9, description='description_8', name='name_8', code='code_8', weight='8'}"
+1745530394514,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394515,"2025-04-24T21:33:14.515Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=10, description='description_9', name='name_9', code='code_9', weight='9'}"
+1745530394515,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394516,"2025-04-24T21:33:14.516Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=11, description='description_10', name='name_10', code='code_10', weight='10'}"
+1745530394517,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394607,"2025-04-24T21:33:14.606Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=12, description='description_11', name='name_11', code='code_11', weight='11'}"
+1745530394609,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394610,"2025-04-24T21:33:14.610Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=13, description='description_12', name='name_12', code='code_12', weight='12'}"
+1745530394611,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394612,"2025-04-24T21:33:14.612Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=14, description='description_13', name='name_13', code='code_13', weight='13'}"
+1745530394614,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394616,"2025-04-24T21:33:14.616Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=15, description='description_14', name='name_14', code='code_14', weight='14'}"
+1745530394618,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394709,"2025-04-24T21:33:14.708Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=16, description='description_15', name='name_15', code='code_15', weight='15'}"
+1745530394710,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394712,"2025-04-24T21:33:14.711Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=17, description='description_16', name='name_16', code='code_16', weight='16'}"
+1745530394713,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394714,"2025-04-24T21:33:14.713Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=18, description='description_17', name='name_17', code='code_17', weight='17'}"
+1745530394714,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394716,"2025-04-24T21:33:14.715Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=19, description='description_18', name='name_18', code='code_18', weight='18'}"
+1745530394716,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745530394718,"2025-04-24T21:33:14.717Z  INFO 1 --- [product] [           main] com.rbm.product.init.LoadDatabase        : Carga inicial: Product{id=20, description='description_19', name='name_19', code='code_19', weight='19'}"
+1745530869110,2025-04-24T21:41:09.109Z  INFO 1 --- [product] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+1745530869110,2025-04-24T21:41:09.110Z  INFO 1 --- [product] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+1745530869112,2025-04-24T21:41:09.112Z  INFO 1 --- [product] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+1745530918911,"Hibernate: select p1_0.id,p1_0.code,p1_0.description,p1_0.name,p1_0.weight from product p1_0"
+1745531087216,"Hibernate: select p1_0.id,p1_0.code,p1_0.description,p1_0.name,p1_0.weight from product p1_0 where p1_0.id=?"
+1745531092454,"Hibernate: select p1_0.id,p1_0.code,p1_0.description,p1_0.name,p1_0.weight from product p1_0 where p1_0.id=?"
+1745531178510,"Hibernate: insert into product (code,description,name,weight,id) values (?,?,?,?,?)"
+1745531303392,"Hibernate: select p1_0.id,p1_0.code,p1_0.description,p1_0.name,p1_0.weight from product p1_0"
+1745531404954,"Hibernate: select p1_0.id,p1_0.code,p1_0.description,p1_0.name,p1_0.weight from product p1_0 where p1_0.id=?"
+1745531404959,Hibernate: delete from product where id=?
